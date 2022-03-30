@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+	<div>
+		<form action="" method="POST">
+			{% csrf_token %}
+			<input type="text" name="body" placeholder="write you edit message here ..." value="{{body}}" selected>
+		</form>
+	</div>
+{% endblock %}
